@@ -16,7 +16,7 @@ header {
 
 header h1 {
     background-color: #a9d6d2;
-    color: black;
+    color: #3e535c;
     font-weight: bold;
     font-size: 36px;
     margin: 0; 
@@ -58,10 +58,23 @@ header nav ul li a {
     background-color: #a9d6d2;
     padding: 10px auto;
     width: 100%;
-   
+   color: #3e535c;
 }
 
 /* Hero Style End */
+
+h3 {
+    font-size: 30px;
+    color: #3e535c;
+    border-right: 5px solid;
+    border-color: #3e535c;
+    display: inline;
+    padding: 10px;
+}
+
+#about-me p {
+    float: right;
+}
 
 
 
