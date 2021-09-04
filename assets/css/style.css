@@ -12,6 +12,10 @@ body {
 header {
     background-color: #252936;
     padding: 20px 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 
 header h1 {
@@ -20,8 +24,7 @@ header h1 {
     font-weight: bold;
     font-size: 50px;
     margin: 0; 
-    padding: 5px 10px 5px 80px;
-    display: inline;  
+    padding: 5px 10px 5px 10px;  
 }
 
 header h1 a {
@@ -29,18 +32,23 @@ header h1 a {
     text-decoration: none;
 }
 header nav {
-    float: right;
     margin: 7px 0;
 }
 
-header nav ul li {
-    display: inline;
+header nav ul {
+    display: flex;
+    list-style: none;
 }
+
+header nav ul li {
+    margin: 10px;
+} 
 
 header nav ul li a {
     color: #a9d6d2;
     font-size: 22px;
     font-weight: lighter;
+    justify-content: flex-end;
 }
 
 /* Hero Style Start - add text */
@@ -49,25 +57,28 @@ header nav ul li a {
     padding: 60px;
     background-image: url("../images/cover.jpeg");
     height: 550px;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
 .hero h2 {
     position: absolute;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 38px;
-    background-color: #a9d6d2;
-    padding: 10px auto;
-    width: 100%;
+    font-size: 45px;
+    /* background-color: #a9d6d2; */
+    width: 80%;
     color: #3e535c;
+    justify-content: flex-end;
+    display: flex;
 }
 
 .hero img {
     height: 200px;
     width: 200px;
-    margin: 200px auto;
+    margin: 200px 0;
     border: 5px solid #a9d6d2;
     z-index: 999;
+    
 }
 
 /* Hero Style End */
@@ -77,18 +88,38 @@ h3 {
     color: #3e535c;
     border-right: 5px solid;
     border-color: #3e535c;
-    display: inline;
+    display: flex;
     padding: 10px;
+    height: 100%;
 }
 
-#about-me p {
-    float: right;
+#about-me, #work, #contact-me {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* Work Style Start */
 
 #work img {
     border: 5px solid #a9d6d2;
+    width: 300px;
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+#main-image {
+    width: 610px;
+    height: 300px;
+    display: flex;
+    margin: 0 auto;
+}
+
+/* Contact Me Style Start */
+
+#contact-me a {
+    text-decoration: none;
+    margin: 20px;
+    
+}
 
