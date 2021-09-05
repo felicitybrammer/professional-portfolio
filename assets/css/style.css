@@ -108,30 +108,46 @@ header nav ul li a {
 }
 
 /* Work Style Start */
-/* #work {} */
+ #work {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-around;
+ } 
 
 .proj {
     /* width: 610px;
     height: 300px; */
     display: flex;
     margin: 0 auto;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
-.proj:first-child {
-    
+.proj-link {
+    width: auto;
+    border: 5px solid #a9d6d2;
+    width: 45%;
 }
 
 .proj-img {
-    width: 60%;
-    border: 5px solid #a9d6d2;
+    width: 45%;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.proj-img:first-child {
+    
+    flex: 2 1 auto; 
+    width: 100%;
+}
+.proj-img img {
+    width: 100%;
 }
 
 
-
 .label {
-    background-color: #a9d6d2;
+    /* background-color: #a9d6d2; */
     z-index: 999;
     
 }
@@ -179,7 +195,8 @@ header nav ul li a {
     padding: 10px;
     /* height: 100%; */
     /* width: 30%; */
-    margin: 4%;
+    margin: 10%;
+    width: 230px;
 }
 
 
@@ -208,36 +225,36 @@ header nav ul li a {
   }
   
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
-  /* @media screen and (max-width: 768px) {
-    header h1 {
-      /* this will be applied on any screen between 768px and 575px */
-      /* font-size: 80px;
-    }
-    section {
-        padding: 30px 15px;
-      }
-    
-      
-  } */ 
-  
-  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-  /* @media screen and (max-width: 575px) { */
-    /* .hero {
-        width: 100%;
-    } */
-
-    /* .section-title {
-        width: 95%;
+   @media screen and (max-width: 768px) {
+    .section-title {
+        /* width: 95%; */
+        border-right: 0px;
         border-bottom: 5px solid ;
         border-color: #3e535c;
       }
     
-      #about-me p {
+      
+  } 
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+   @media screen and (max-width: 575px) { 
+    /* .hero {
+        width: 100%;
+    } */
+
+     .section-title {
+        /* width: 95%; */
+        border-right: 0px;
+        border-bottom: 5px solid ;
+        border-color: #3e535c;
+      }
+    
+      /* #about-me p {
         width: 100%;
       }
     
       #work {
         flex: 0 100%;
-      }
+      } */
     
-  }  */
+  }  
