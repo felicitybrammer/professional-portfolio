@@ -125,26 +125,27 @@ header nav ul li a {
 
 .proj-link {
     width: auto;
-    border: 5px solid #a9d6d2;
+    /* border: 5px solid #a9d6d2; */
     width: 45%;
 }
 
 .proj-img {
-    width: 45%;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
-
+    border: 5px solid #a9d6d2;
 }
 
-.proj-img:first-child {
-    
-    flex: 2 1 auto; 
-    width: 100%;
-}
 .proj-img img {
     width: 100%;
 }
 
+.large-proj {}
+.large-proj-link {}
+.large-proj-img {
+    border: 5px solid #a9d6d2;
+}
+.large-proj-img img {}
 
 .label {
     /* background-color: #a9d6d2; */
