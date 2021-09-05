@@ -9,13 +9,14 @@ body {
     background-color: #ebebf5;
 }
 
+/* Header Style Start */
+
 header {
     background-color: #252936;
     padding: 20px 35px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
 }
 
 header h1 {
@@ -31,6 +32,7 @@ header h1 a {
     color: #3e535c;
     text-decoration: none;
 }
+
 header nav {
     margin: 7px 0;
 }
@@ -43,11 +45,6 @@ header nav ul {
     list-style: none;
   }
 
-/* header nav ul {
-    display: flex;
-    list-style: none;
-} */
-
 header nav ul li {
     margin: 10px;
 } 
@@ -59,7 +56,9 @@ header nav ul li a {
     
 }
 
-/* Hero Style Start - add text */
+/* Header Style End */
+
+/* Hero Style Start */
 
 .hero {
     padding: 60px;
@@ -70,21 +69,20 @@ header nav ul li a {
 }
 
 .hero h2 {
-    position: absolute;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 45px;
+    font-size: 5vw;
     /* background-color: #a9d6d2; */
-    width: 80%;
+    /* width: 80%; */
     color: #3e535c;
-    justify-content: flex-end;
     display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .hero img {
     height: 200px;
     width: 200px;
     margin: 200px 0;
-    border: 5px solid #a9d6d2;
+    /* border: 5px solid #a9d6d2; */
     z-index: 999;   
 }
 /* Hero Style End */
@@ -105,38 +103,32 @@ header nav ul li a {
 #about-me p {
     line-height: 1.3;
     width: 70%;
-    /* margin: 4%; */
+    margin: 4%; 
+    display: flex;
 }
 
 /* Work Style Start */
 /* #work {} */
 
-.big-proj {
+.proj {
     /* width: 610px;
     height: 300px; */
     display: flex;
     margin: 0 auto;
-}
-
-.big-proj-img {
-    width: 60%;
-    border: 5px solid #a9d6d2;
-}
-
-.small-proj {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.proj-img {
-    border: 5px solid #a9d6d2;
-    /* width: 300px;
-    height: 120px; */
-    display: flex;
-    flex-wrap: wrap;   
-    width: 30%;
+.proj:first-child {
+    
 }
+
+.proj-img {
+    width: 60%;
+    border: 5px solid #a9d6d2;
+}
+
+
 
 .label {
     background-color: #a9d6d2;
@@ -153,27 +145,32 @@ header nav ul li a {
     font-style: lighter;
 }
 
+/* Work Style End */
+
 /* Contact Me Style Start */
 
-#contact-me a, p {
+#contact-me a, #contact-me p {
     text-decoration: none;
     margin: 20px;
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    border-bottom: 5px solid;
+    border-color: #3e535c;
+    
 }
 
-
+/* Contact Me Style End */
 
 
 
 .flex-row {
-    display: flex;
+    display: inline-flex;
 }
 
 
 .section-title {
-    font-size: 30px;
+    font-size: 3vw;
     color: #3e535c;
     border-right: 5px solid;
     border-color: #3e535c;
@@ -181,5 +178,66 @@ header nav ul li a {
     /* flex-wrap: wrap; */
     padding: 10px;
     /* height: 100%; */
-    width: 30%;
+    /* width: 30%; */
+    margin: 4%;
 }
+
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+/* @media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+      }
+    
+      header h1 {
+        width: 100%;
+        text-align: center;
+      }
+    
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+    
+      header nav ul li a {
+        font-size: 20px;
+      }
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  /* @media screen and (max-width: 768px) {
+    header h1 {
+      /* this will be applied on any screen between 768px and 575px */
+      /* font-size: 80px;
+    }
+    section {
+        padding: 30px 15px;
+      }
+    
+      
+  } */ 
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  /* @media screen and (max-width: 575px) { */
+    /* .hero {
+        width: 100%;
+    } */
+
+    /* .section-title {
+        width: 95%;
+        border-bottom: 5px solid ;
+        border-color: #3e535c;
+      }
+    
+      #about-me p {
+        width: 100%;
+      }
+    
+      #work {
+        flex: 0 100%;
+      }
+    
+  }  */
