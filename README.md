@@ -14,3 +14,5 @@ A responsive portfolio of deployed work samples suitable for review by potential
 https://felicitybrammer.github.io/professional-portfolio/
 
 ## Screenshot
+
+![Screenshot](assets/images/screenshot.png)
